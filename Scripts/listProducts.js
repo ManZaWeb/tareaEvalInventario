@@ -46,6 +46,7 @@ export const productsDisplay = () => {
     editBtn.addEventListener("click", () => {
 
         
+        
         const itemTitle = document.getElementById('product-name')
         const itemCant = document.getElementById('product-qty')
         const itemPrice = document.getElementById('product-price')

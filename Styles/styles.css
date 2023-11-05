@@ -32,11 +32,25 @@ body {
 .main h1 {
     margin-bottom: 5vh;
     font-family: DancingScript;
+    font-weight: 600;
     font-size: 5vh;
     
 }
 
 .main button{
     width: 10vh;
-    height: 4vh;
+    height: 3vh;
+}
+
+.main table{
+    border: solid 1px;
+    margin: 0 auto;
+
+}
+
+.main th{
+    color: black;
+    margin: 0 auto;
+    width: 75vh;
+
 }

@@ -33,7 +33,7 @@ export const insertProducts = () => {
       inventory.push(newProduct);
 
       // Limpiar la tabla antes de la nueva insercción
-      const cleanTbody = document.getElementById("inventory-display2");
+      const cleanTbody = document.getElementById("inventory-display");
 
       cleanTbody.innerHTML = "";
       // Limpiar los campos del formulario

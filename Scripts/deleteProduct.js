@@ -1,8 +1,13 @@
+/**
+ * Autor Mario Alfonso Nuñez
+ * GitHub:
+ */
+
 import { inventory } from "./products.js"
 import  { listProducts } from "./listProducts.js"
 
 export const deleteProduct = (item) => {
-    console.log(item.titulo)
+    
     if (confirm(`¿Estás seguro de borrar "${item.titulo}"?`)) {
         const index = inventory.findIndex(product => product.id === item.id)
 
@@ -10,7 +15,7 @@ export const deleteProduct = (item) => {
           inventory.splice(index, 1)
         }
       }
-      const tableDisplay = document.getElementById("inventory-display2")
+      const tableDisplay = document.getElementById("inventory-display")
       tableDisplay.innerHTML = ""
       listProducts()
       

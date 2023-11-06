@@ -6,10 +6,11 @@
 import { inventory } from "./products.js"
 import { deleteProduct } from "./deleteProduct.js"
 import { updateProduct } from "./updateProducts.js"
+//import { searchProduct } from "./searchProduct.js"
 
 export const listProducts = () => {
 
-  const tableDisplay = document.getElementById("inventory-display2")
+  const tableDisplay = document.getElementById("inventory-display")
 
   inventory.forEach((item) => {
 
@@ -37,6 +38,7 @@ export const listProducts = () => {
 
     const editBtn = document.createElement("button")
     editBtn.innerText = "EDITAR"
+    
     editBtn.addEventListener("click", () => {
 
       updateProduct()
@@ -44,6 +46,8 @@ export const listProducts = () => {
 
     cell5.appendChild(editBtn)
     cell5.appendChild(deleteBtn)
+
+  
 
   })
 }

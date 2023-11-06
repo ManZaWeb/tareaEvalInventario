@@ -9,7 +9,10 @@
 }
 
 body {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+    background-image: url('/Assets/imgs/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Escala la imagen para cubrir completamente el contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen dentro del contenedor */
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     align-items: center;
@@ -23,10 +26,18 @@ body {
     padding: 5vh;
     margin: 0 auto;
     margin-top: 5vh;
-    width: 75vh;
+    margin-bottom: 5vh;
+    width: 90vh;
     max-width: 100vh;
     border-radius: 5px;
     
+    
+}
+
+.main input{
+    border-radius: 2.5px;
+    border: 1px;
+    height: 3vh;
 }
 
 .main h1 {
@@ -70,3 +81,4 @@ body {
 .footBtn-styles{
     margin-top: 2vh;
 }
+

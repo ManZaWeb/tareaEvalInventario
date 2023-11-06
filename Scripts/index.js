@@ -3,16 +3,31 @@
  * GitHub:
  */
 
-import { listProducts } from "./listProducts.js";
+import { listProducts } from "./listProducts.js"
 
-import { insertProducts } from "./insertProducts.js";
+import { insertProducts } from "./insertProducts.js"
 
-document.addEventListener("DOMContentLoaded", listProducts);
+import { total } from "./total.js"
 
+
+//Listado del inventario
+document.addEventListener("DOMContentLoaded", listProducts)
+
+//nos permite introducir nuevos productos
 document.addEventListener("DOMContentLoaded", () => {
-  const btnForm = document.getElementById("product-form-event");
+  const btnForm = document.getElementById("product-form-event")
 
   btnForm.addEventListener("click", () => {
-    insertProducts();
-  });
-});
+    insertProducts()
+  })
+  
+})
+
+//Nos permite calcular el valor total
+const totalBtn = document.getElementById("total")
+totalBtn.addEventListener("click", () => {
+  total()
+  
+})
+
+

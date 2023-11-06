@@ -37,6 +37,3 @@ export const updateProduct = (productID) => {
 
         }
 }
-
-
-

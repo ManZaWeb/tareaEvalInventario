@@ -4,8 +4,10 @@
  */
 
 import { inventory } from "./products.js"
+import { deleteProduct } from "./deleteProduct.js"
+import { updateProduct } from "./updateProducts.js"
 
-export const productsDisplay = () => {
+export const listProducts = () => {
 
   const tableDisplay = document.getElementById("inventory-display2")
 
@@ -29,37 +31,15 @@ export const productsDisplay = () => {
     const deleteBtn = document.createElement("button")
     deleteBtn.innerText = "BORRAR"
     deleteBtn.addEventListener("click", () => {
-
-      if (confirm(`¿Estás seguro de borrar "${item.titulo}"?`)) {
-        const index = inventory.findIndex(product => product.id === item.id)
-
-        if (index !== -1) { // Si el resultado no es -1, tenemos coincidencia
-          inventory.splice(index, 1)
-        }
-      }
-      tableDisplay.innerHTML = ""
-      productsDisplay()
+      deleteProduct(item)
+      
     });
 
     const editBtn = document.createElement("button")
     editBtn.innerText = "EDITAR"
     editBtn.addEventListener("click", () => {
 
-
-
-      const itemTitle = document.getElementById('product-name')
-      const itemCant = document.getElementById('product-qty')
-      const itemPrice = document.getElementById('product-price')
-      const itemVersion = document.getElementById('product-format')
-
-
-      itemTitle.value = item.titulo
-      itemCant.value = item.cantidad
-      itemPrice.value = item.precio
-      itemVersion.value = item.formato
-
-
-
+      updateProduct()
     })
 
     cell5.appendChild(editBtn)

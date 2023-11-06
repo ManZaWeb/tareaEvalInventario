@@ -3,7 +3,7 @@
  * GitHub:
  */
 
-import { productsDisplay } from "./listProducts.js";
+import { listProducts } from "./listProducts.js";
 import { inventory } from "./products.js";
 
 export const insertProducts = () => {
@@ -39,7 +39,7 @@ export const insertProducts = () => {
       // Limpiar los campos del formulario
       productForm.reset();
 
-      productsDisplay();
+      listProducts()
     }
   });
 };

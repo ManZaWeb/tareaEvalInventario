@@ -30,7 +30,7 @@ body {
 }
 
 .main h1 {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     font-family: DancingScript;
     font-weight: 600;
     font-size: 5vh;
@@ -49,8 +49,25 @@ body {
 }
 
 .main th{
-    color: black;
+    color: white;
     margin: 0 auto;
     width: 75vh;
-
+    border: solid 1px;
 }
+
+.main td{
+    color: white;
+    margin: 0 auto;
+    width: 75vh;
+    border: solid 1px;
+}
+
+.inventory-insert-style{
+    margin-bottom: 2vh;
+    font-size: 3vh;
+}
+
+.footBtn-styles{
+    margin-top: 2vh;
+}
+

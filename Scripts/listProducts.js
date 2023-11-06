@@ -7,7 +7,7 @@ import { inventory } from "./products.js"
 
 export const productsDisplay = () => {
 
-  const tableDisplay = document.getElementById("inventory-display")
+  const tableDisplay = document.getElementById("inventory-display2")
 
   inventory.forEach((item) => {
 

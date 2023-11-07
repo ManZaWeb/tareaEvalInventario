@@ -6,6 +6,8 @@
 import { inventory } from "./products.js"
 import { deleteProduct } from "./deleteProduct.js"
 import { updateProduct } from "./updateProducts.js"
+
+
 //import { searchProduct } from "./searchProduct.js"
 
 export const listProducts = () => {
@@ -34,15 +36,19 @@ export const listProducts = () => {
     deleteBtn.addEventListener("click", () => {
       deleteProduct(item)
       
-    });
+    })
 
     const editBtn = document.createElement("button")
     editBtn.innerText = "EDITAR"
-    
     editBtn.addEventListener("click", () => {
-
-      updateProduct()
+      updateProduct(item.id)
+      deleteProduct(item)
+      
     })
+
+
+    
+    
 
     cell5.appendChild(editBtn)
     cell5.appendChild(deleteBtn)

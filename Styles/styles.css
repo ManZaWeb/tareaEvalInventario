@@ -29,8 +29,7 @@ body {
     margin-bottom: 5vh;
     width: 150vh;
     max-width: 200vh;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
     
 }
 
@@ -38,6 +37,14 @@ body {
     border-radius: 2.5px;
     border: 1px;
     height: 3vh;
+}
+
+.search-style{
+    border-radius: 2.5px;
+    border: 1px;
+    height: 3vh;
+    width: 60vh;
+    margin-top: 5vh;
 }
 
 .main h1 {
@@ -56,14 +63,14 @@ body {
 .main table{
     border: solid 1px;
     margin: 0 auto;
-
+    font-size: 3vh;
 }
 
 .main th{
     color: white;
     margin: 0 auto;
     width: 75vh;
-    border: solid 1px;
+    
 }
 
 .main td{
@@ -80,5 +87,6 @@ body {
 
 .footBtn-styles{
     margin-top: 2vh;
+    
 }
 

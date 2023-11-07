@@ -9,7 +9,7 @@ import { insertProducts } from "./insertProducts.js"
 
 import { total } from "./total.js"
 
-import { updateProduct } from "./updateProducts.js"
+import { searchProduct } from "./searchProduct.js"
 
 
 //Listado del inventario
@@ -32,7 +32,10 @@ totalBtn.addEventListener("click", () => {
   
 })
 
+//Nos permite buscar en nuestro inventario
 
 
+
+document.addEventListener("DOMContentLoaded", searchProduct)
 
 

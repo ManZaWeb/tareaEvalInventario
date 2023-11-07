@@ -9,10 +9,10 @@
 }
 
 body {
-    background-image: url('/Assets/imgs/fondo.jpg'); /* Ruta de la imagen */
-    background-size: cover; /* Escala la imagen para cubrir completamente el contenedor */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-image: url('/Assets/imgs/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     align-items: center;
@@ -29,17 +29,17 @@ body {
     margin-bottom: 5vh;
     width: 150vh;
     max-width: 200vh;
-    border-radius: 5px;   
-    
+    border-radius: 5px;
+
 }
 
-.main input{
+.main input {
     border-radius: 2.5px;
     border: 1px;
     height: 3vh;
 }
 
-.search-style{
+.search-style {
     border-radius: 2.5px;
     border: 1px;
     height: 3vh;
@@ -52,41 +52,85 @@ body {
     font-family: DancingScript;
     font-weight: 600;
     font-size: 5vh;
-    
+
 }
 
-.main button{
+.main button {
     width: 10vh;
     height: 3vh;
 }
 
-.main table{
+/**borde tabla**/
+.main table {
     border: solid 1px;
     margin: 0 auto;
     font-size: 3vh;
+    color: white;
 }
 
-.main th{
+/**Encabezado**/
+.main th {
     color: white;
     margin: 0 auto;
     width: 75vh;
-    
+
 }
 
-.main td{
+
+/**tbody**/
+.main td {
     color: white;
     margin: 0 auto;
     width: 75vh;
+    height: 10vh;
     border: solid 1px;
 }
 
-.inventory-insert-style{
+/**Label insertar**/
+.inventory-insert-style {
     margin-bottom: 2vh;
     font-size: 3vh;
 }
 
-.footBtn-styles{
+.footBtn-styles {
     margin-top: 2vh;
-    
+
 }
 
+.deleteBtn {
+    color: red;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.deleteBtn:hover {
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+    color: white;
+        
+  }
+
+.editBtn {
+    color: blue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.editBtn:hover {
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% ); 
+    color: white;
+   
+  }
+
+  .totalBtn {
+    color: blue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.totalBtn:hover {
+     
+    color: black;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    
+  }
+.product-format-style{
+    height: 2.5vh;
+    border-radius: 5px;
+}

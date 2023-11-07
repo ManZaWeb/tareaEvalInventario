@@ -33,6 +33,7 @@ export const listProducts = () => {
 
     const deleteBtn = document.createElement("button")
     deleteBtn.innerText = "BORRAR"
+    deleteBtn.classList = "deleteBtn"
     deleteBtn.addEventListener("click", () => {
       deleteProduct(item)
       
@@ -40,6 +41,7 @@ export const listProducts = () => {
 
     const editBtn = document.createElement("button")
     editBtn.innerText = "EDITAR"
+    editBtn.classList = "editBtn"
     editBtn.addEventListener("click", () => {
       updateProduct(item.id)
       deleteProduct(item)

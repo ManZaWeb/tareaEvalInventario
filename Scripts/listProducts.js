@@ -6,7 +6,7 @@
 import { inventory } from "./products.js"
 import { deleteProduct } from "./deleteProduct.js"
 import { updateProduct } from "./updateProducts.js"
-//import { searchProduct } from "./searchProduct.js"
+import { total } from "./total.js"
 
 export const listProducts = () => {
 
@@ -33,6 +33,7 @@ export const listProducts = () => {
     deleteBtn.innerText = "BORRAR"
     deleteBtn.addEventListener("click", () => {
       deleteProduct(item)
+      total()
       
     });
 

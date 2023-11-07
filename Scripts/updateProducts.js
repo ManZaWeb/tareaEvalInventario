@@ -37,8 +37,7 @@ export const updateProduct = (productID) => {
         
             
             listProducts()
-            
-                      
+                                  
 
         }
         submitButton.addEventListener("click", () => {

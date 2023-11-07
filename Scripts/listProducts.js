@@ -45,6 +45,10 @@ export const listProducts = () => {
     editBtn.addEventListener("click", () => {
       updateProduct(item.id)
       deleteProduct(item)
+      window.scroll({
+        top: 10,
+        behavior: "smooth",
+      });
       
     })    
 

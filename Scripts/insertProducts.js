@@ -1,8 +1,3 @@
-/**
- * Autor Mario Alfonso Nuñez
- * GitHub:
- */
-
 import { listProducts } from "./listProducts.js";
 import { inventory } from "./products.js";
 

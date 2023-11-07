@@ -1,8 +1,3 @@
-/**
- * Autor Mario Alfonso Nuñez
- * GitHub:
- */
-
 export { inventory }
 
 // Cantidades aleatorias entre 1 y 30

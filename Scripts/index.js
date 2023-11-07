@@ -1,6 +1,6 @@
 /**
  * Autor Mario Alfonso Nuñez
- * GitHub:
+ * GitHub: https://github.com/ManZaWeb/tareaEvalInventario.git
  */
 
 import { listProducts } from "./listProducts.js"

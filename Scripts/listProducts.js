@@ -44,16 +44,10 @@ export const listProducts = () => {
       updateProduct(item.id)
       deleteProduct(item)
       
-    })
-
-
-    
-    
+    })    
 
     cell5.appendChild(editBtn)
-    cell5.appendChild(deleteBtn)
-
-  
+    cell5.appendChild(deleteBtn)  
 
   })
 }

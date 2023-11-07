@@ -35,10 +35,15 @@ export const updateProduct = (productID) => {
             product.precio = productPriceInput.value
             product.formato = productFormatInput.value
         
+            
             listProducts()
+            
                       
 
         }
+        submitButton.addEventListener("click", () => {
+            submitButton.innerText = "Agregar";
+        })
     }
 
 }

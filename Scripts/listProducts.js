@@ -6,7 +6,9 @@
 import { inventory } from "./products.js"
 import { deleteProduct } from "./deleteProduct.js"
 import { updateProduct } from "./updateProducts.js"
-import { total } from "./total.js"
+
+
+//import { searchProduct } from "./searchProduct.js"
 
 export const listProducts = () => {
 
@@ -33,22 +35,19 @@ export const listProducts = () => {
     deleteBtn.innerText = "BORRAR"
     deleteBtn.addEventListener("click", () => {
       deleteProduct(item)
-      total()
       
-    });
+    })
 
     const editBtn = document.createElement("button")
     editBtn.innerText = "EDITAR"
-    
     editBtn.addEventListener("click", () => {
-
-      updateProduct()
-    })
+      updateProduct(item.id)
+      deleteProduct(item)
+      
+    })    
 
     cell5.appendChild(editBtn)
-    cell5.appendChild(deleteBtn)
-
-  
+    cell5.appendChild(deleteBtn)  
 
   })
 }

@@ -9,11 +9,13 @@ import { insertProducts } from "./insertProducts.js"
 
 import { total } from "./total.js"
 
+import { updateProduct } from "./updateProducts.js"
+
 
 //Listado del inventario
 document.addEventListener("DOMContentLoaded", listProducts)
 
-//nos permite introducir nuevos productos
+//Nos permite introducir nuevos productos
 document.addEventListener("DOMContentLoaded", () => {
   const btnForm = document.getElementById("product-form-event")
 
@@ -29,5 +31,8 @@ totalBtn.addEventListener("click", () => {
   total()
   
 })
+
+
+
 
 
